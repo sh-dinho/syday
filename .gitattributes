@@ -1,0 +1,47 @@
+# Ensure consistent line endings across OS
+* text=auto eol=lf
+
+# Treat TypeScript and JavaScript files as text
+*.ts   text diff=typescript
+*.tsx  text diff=typescript
+*.js   text diff=javascript
+*.jsx  text diff=javascript
+
+# JSON, YAML, and config files
+*.json text
+*.yaml text
+*.yml  text
+
+# Stylesheets
+*.css  text
+*.scss text
+*.sass text
+
+# Markdown and documentation
+*.md   text
+*.mdx  text
+
+# Lockfiles (keep them consistent, don’t normalize)
+pnpm-lock.yaml text eol=lf
+
+# Binary files
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
+*.mp4  binary
+*.mov  binary
+*.pdf  binary
+
+# Fonts
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+
+# Ignore diffs for generated build outputs
+.next/** -diff
+dist/**  -diff
+out/**   -diff

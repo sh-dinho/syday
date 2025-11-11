@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Electric accent buttons */
+.btn-electric {
+    background: linear-gradient(90deg, #00F0FF, #7CE8FF);
+    color: #000;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-white dark:bg-[#071226] text-gray-900 dark:text-gray-100 transition-colors duration-300;
+}
