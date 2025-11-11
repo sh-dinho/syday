@@ -1,0 +1,42 @@
+# Node.js dependencies
+node_modules/
+.pnpm-debug.log*
+
+# Next.js build output
+.next/
+out/
+dist/
+
+# Production build
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+*.log.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files (WebStorm / VSCode)
+.idea/
+.vscode/
+*.swp
+
+# Coverage / testing
+coverage/
+*.lcov
+
+# TypeScript artifacts
+*.tsbuildinfo
+
+# Misc
+*.tgz
